@@ -1,7 +1,7 @@
-import type { TocItem } from "../utils/markdown";
+import type { TocItem } from "../utils/markdown"
 
 export function TableOfContents({ headings }: { headings: TocItem[] }) {
-  if (headings.length === 0) return null;
+  if (headings.length === 0) return null
 
   return (
     <nav className="sticky top-8 text-sm">
@@ -22,5 +22,5 @@ export function TableOfContents({ headings }: { headings: TocItem[] }) {
         ))}
       </ul>
     </nav>
-  );
+  )
 }

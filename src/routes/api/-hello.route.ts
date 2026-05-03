@@ -1,5 +1,5 @@
-import { OpenAPIRoute } from "chanfana";
-import { z } from "zod";
+import { OpenAPIRoute } from "chanfana"
+import { z } from "zod"
 
 export class HelloEndpoint extends OpenAPIRoute {
   schema = {
@@ -18,9 +18,9 @@ export class HelloEndpoint extends OpenAPIRoute {
         },
       },
     },
-  };
+  }
 
   async handle() {
-    return Response.json({ status: true, message: "Hello Tanstack Start!" });
+    return Response.json({ status: true, message: "Hello Tanstack Start!" })
   }
 }
