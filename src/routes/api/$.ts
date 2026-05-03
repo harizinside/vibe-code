@@ -6,7 +6,7 @@ import { logger } from "hono/logger";
 import { languageDetector } from "hono/language";
 import { setupOpenAPI } from "./-openapi";
 
-const app = new Hono().basePath("/api");
+export const app = new Hono().basePath("/api");
 
 app.use(compress());
 
